@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Introdução */
+
+.intro {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+.intro p {
+    max-width: 750px;
+    margin: auto;
+    color: #64748b;
+}
+
+/* Conteúdos */
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px 0 60px;
+}
+
+.topic {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #2563eb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.topic:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.topic h3 {
+    color: #1e3a8a;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.topic p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.number {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .topics {
+        grid-template-columns: 1fr;
+    }
+
+    .topic {
+        padding: 20px;
+    }
+}
